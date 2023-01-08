@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico" />
+    <title>Martin Malík - PHP fullstack developer</title>
+    <meta name="description" content="Martin Malík PHP fullstack developer.">
+    <meta name="author" content="malikmartin.sk">
+
+    <!-- Fonts -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' type='text/css'>
+
+    <!-- Stylesheets -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+    <div class="preloader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="main-wrapper">
+        <!-- Header -->
+        <header id="header" class="sticky-top-slide">
+            <!-- Navbar -->
+            <nav class="primary-menu navbar navbar-expand-lg text-uppercase navbar-line-under-text fw-600">
+                <div class="container position-relative">
+                    <div class="col-auto col-lg-2 d-inline-flex ps-lg-0">
+                        <a class="logo" href="index.html">
+                            <img src="images/logo-sm.png" alt="Malik"/>
+                        </a>
+                    </div>
+                    <div class="col col-lg-8 navbar-accordion px-0">
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav"><span></span><span></span><span></span></button>
+                        <div id="header-nav" class="collapse navbar-collapse justify-content-center">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link smooth-scroll active" href="#home">Home</a></li>
+                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#services">Services</a></li>
+                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#skills">Skills</a></li>
+                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#resume">Resume</a></li>
+                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
+                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto col-lg-2 d-flex justify-content-end ps-0">
+                        <ul class="social-icons">
+                            <li class="social-icons-facebook"><a data-bs-toggle="tooltip" href="http://www.facebook.com/" target="_blank" title="" data-bs-original-title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                            <li class="social-icons-instagram"><a data-bs-toggle="tooltip" href="http://www.instagram.com/" target="_blank" title="" data-bs-original-title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li class="social-icons-linkedin"><a data-bs-toggle="tooltip" href="http://www.linkedin.com/" target="_blank" title="" data-bs-original-title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Content -->
+        <div id="content" role="main">
+            <!-- Hero -->
+            <section id="home">
+                <div class="hero-wrap">
+                    <div class="hero-mask opacity-8 bg-dark"></div>
+                    <div class="hero-bg parallax" style="background-image:url('images/hero-bg.jpg');"></div>
+                    <div class="hero-content d-flex fullscreen-with-header py-5">
+                        <div class="container my-auto py-4">
+                            <div class="row">
+                                <div class="col-lg-12 text-center order-1 order-lg-0">
+                                    <h1 class="text-8 text-white fw-400 mb-0 text-uppercase">Hi, I'm <span style="color: #f5df4e;">Martin Malík</span></h1>
+                                    <h2 class="text-23 text-white fw-600 text-uppercase mb-0 ms-n1"><span class="typed"></span></h2>
+                                    <h1 class="text-8 text-white fw-400 mb-0 text-uppercase">developer</h1>
+                                    <p class="text-5 text-light">from Bratislava, SK</p>
+                                    <a href="#portfolio" class="btn btn-primary fw-600 rounded-0 smooth-scroll mt-3">View portfolio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#about" class="scroll-down-arrow text-light smooth-scroll"><span class="animated"><i class="fas fa-arrow-down"></i></span></a>
+                    </div>
+                </div>
+            </section>
+            <!-- Hero end -->
+
+            <!-- About -->
+            <section id="about" class="section">
+                <div class="container">
+                    <p class="text-center mb-2" data-aos="fade-up">
+                        <span class="bg-primary text-dark px-2">Who Am I</span>
+                    </p>
+                    <h2 class="text-10 fw-600 text-center mb-2 mb-lg-5" data-aos="fade-up">About me</h2>
+
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-3 mt-4 mt-lg-0 mb-4 mb-lg-0 d-flex justify-content-center" data-aos="fade-up" data-aos-offset="260">
+                            <img src="images/me.png" class="w-100" alt="Photo of me" style="max-width: 320px;">
+                        </div>
+                        <div class="col-lg-8 offset-lg-1 text-center text-lg-start" data-aos="fade-up" data-aos-delay="400">
+                            <h2 class="text-8 fw-400 mb-3">
+                                Hello, I'm <span class="fw-700 border-bottom border-3 border-primary">Martin Malík</span>
+                            </h2>
+                            <p class="text-4 mb-2">
+                                I'm a PHP fullstack developer, which means I'm able to create an entire website (backend & frontend) from scratch.
+                                I started my journey as a web developer at the Slovak University of Technology in Bratislava back in 2013, where i later got a master's degree in applied informatics.
+                            </p>
+                            <p class="text-4 mb-2">
+                                As for backend development, I specialize in PHP frameworks Nette & Laravel and database systems PostgreSQL & MySQL. Code is tested using PHPUnit.
+                                At frontend, i use tools and libraries such as HTML, CSS (Sass, Bootstrap), javascript (jQuery, Vue.js), etc...
+                            </p>
+                            <p class="text-4 mb-0">
+                                I consider myself a patient, well-organized person with analytical thinking and a high attention to detail.
+                                In my spare time I'm a big fan of sports of any kind, especially football. I like to watch a good movie or hang out with my family and friends.
+                                Also, I'm the father of a seven-month-old son Max.
+                            </p>
+                            <img src="images/signature.png" class="mt-2" alt="Signature">
+                        </div>
+                    </div>
+
+                    <div class="row gy-3 mt-2">
+                        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-offset="-10">
+                            <p class="text-muted fw-500 mb-0">Name:</p>
+                            <p class="text-4 text-dark fw-600 mb-0">Martin Malík</p>
+                        </div>
+                        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-offset="-10" data-aos-delay="200">
+                            <p class="text-muted fw-500 mb-0">Email:</p>
+                            <p class="text-4 fw-600 mb-0"><a class="link-dark" href="">xmalikm3@gmail.com</a></p>
+                        </div>
+                        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-offset="-10" data-aos-delay="300">
+                            <p class="text-muted fw-500 mb-0">Date of birth:</p>
+                            <p class="text-4 text-dark fw-600 mb-0">3rd November, 1993</p>
+                        </div>
+                        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-offset="-10" data-aos-delay="400">
+                            <p class="text-muted fw-500 mb-0">From:</p>
+                            <p class="text-4 text-dark fw-600 mb-0">Bratislava, SK</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About end -->
+
+            <!-- Services -->
+            <section id="services" class="section bg-light">
+                <div class="container">
+                    <p class="text-center mb-2" data-aos="fade-up">
+                        <span class="bg-primary text-dark px-2">What I Do</span>
+                    </p>
+                    <h2 class="text-10 fw-600 text-center mb-5" data-aos="fade-up">Services I can offer</h2>
+
+                    <div class="row gy-5 mt-5">
+                        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="featured-box text-center px-md-4">
+                                <div class="featured-box-icon text-primary text-13"> <i class="fa-solid fa-server"></i> </div>
+                                <h3 class="text-6 fw-600 mb-3">Backend dev</h3>
+                                <p class="text-muted mb-0">
+                                    Development of various backend functionalities such as shipping services, payment
+                                    gates, SMS gates, ERP systems, product data feeds, REST API, SOAP,...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="featured-box text-center px-md-4">
+                                <div class="featured-box-icon text-primary text-13"> <i class="fa-solid fa-code"></i></div>
+                                <h3 class="text-6 fw-600 mb-3">Frontend dev</h3>
+                                <p class="text-muted mb-0">
+                                    Building modern, mobile friendly websites and user interfaces with HTML, CSS
+                                    and javascript. Using BEM metodology for organizing and naming CSS classes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                            <div class="featured-box text-center px-md-4">
+                                <div class="featured-box-icon text-primary text-13"> <i class="fa-solid fa-palette"></i> </div>
+                                <h3 class="text-6 fw-600 mb-3">Web design</h3>
+                                <p class="text-muted mb-0">
+                                    Using Figma to create wireframes and mockups before coding. Photoshop skills like
+                                    converting a design into a real website, image editing,...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="featured-box text-center px-md-4">
+                                <div class="featured-box-icon text-primary text-13"> <i class="fa-solid fa-gears"></i> </div>
+                                <h3 class="text-6 fw-600 mb-3">Server setup</h3>
+                                <p class="text-muted mb-0">
+                                    Apache web server configuration, DNS records configuration and other things related
+                                    to server setup. Average Linux shell skills.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="featured-box text-center px-md-4">
+                                <div class="featured-box-icon text-primary text-13"> <i class="fa-brands fa-google"></i> </div>
+                                <h3 class="text-6 fw-600 mb-3">Google products</h3>
+                                <p class="text-muted mb-0">
+                                    Implementation of various Google services such as Google Maps
+                                    geolocation API, reCaptcha, Google Analytics events and other tracking codes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                            <div class="featured-box text-center px-md-4">
+                                <div class="featured-box-icon text-primary text-13"> <i class="fa-solid fa-file-code"></i> </div>
+                                <h3 class="text-6 fw-600 mb-3">Other</h3>
+                                <p class="text-muted mb-0">
+                                    WordPress CMS, Docker, Luigi's Box, OpenStreetMap, Microsoft Dynamics CRM, object recognition using AI, e-mail templates.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Services end -->
+
+            <!-- Skills -->
+            <section id="skills" class="section">
+                <div class="container">
+                    <p class=" text-center mb-2" data-aos="fade-up"><span class="bg-primary text-dark px-2">Skills</span></p>
+                    <h2 class="text-10 fw-600 text-center mb-5" data-aos="fade-up">Technologies I'm good at</h2>
+
+                    <!-- My Skills -->
+                    <div class="row gx-5">
+                        <div class="col-md-6" data-aos="fade-up">
+                            <p class="fw-500 d-flex align-items-center mb-2"><img src="images/icons/technologies/html.png" class="me-2" style="width: 30px;" alt="HTML">HTML</p>
+                            <div class="progress progress-sm mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="fw-500 d-flex align-items-center mb-2"><img src="images/icons/technologies/css.png" class="me-2" style="width: 30px;" alt="CSS">CSS</p>
+                            <div class="progress progress-sm mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="fw-500 d-flex align-items-center mb-2"><img src="images/icons/technologies/bootstrap.png" class="me-2" style="width: 30px;" alt="Bootstrap">Bootstrap</p>
+                            <div class="progress progress-sm mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="fw-500 d-flex align-items-center mb-2"><img src="images/icons/technologies/javascript.png" class="me-2" style="width: 30px;" alt="JavaScript">JavaScript</p>
+                            <div class="progress progress-sm mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="fw-500 d-flex align-items-center mb-2"><img src="images/icons/technologies/jquery.png" class="me-2" style="width: 30px;" alt="jQuery">jQuery</p>
+                            <div class="progress progress-sm mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <p class="fw-500 d-flex align-items-center mb-2"><img src="images/icons/technologies/vuejs.png" class="me-2" style="width: 22px;" alt="Vue.js">Vue.js</p>
+                            <div class="progress progress-sm mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="fw-500 d-flex align-items-center mb-2"><img src="images/icons/technologies/php.png" class="me-2" style="width: 30px;" alt="PHP">PHP</p>
+                            <div class="progress progress-sm mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="fw-500 d-flex align-items-center mb-2"><img src="images/icons/technologies/laravel.png" class="me-2" style="width: 26px;" alt="Laravel">Laravel</p>
+                            <div class="progress progress-sm mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="fw-500 d-flex align-items-center mb-2"><img src="images/icons/technologies/nette.png" class="me-2" style="width: 40px;" alt="Nette">Nette</p>
+                            <div class="progress progress-sm mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="fw-500 d-flex align-items-center mb-2"><img src="images/icons/technologies/mysql.png" class="me-2" style="width: 30px;" alt="MySQL">MySQL / <img src="images/icons/technologies/postgresql.png" class="mx-1" style="width: 20px;" alt="PostgreSQL">PostgreSQL</p>
+                            <div class="progress progress-sm mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row gx-5">
+                        <div class="col-md-12 wow fadeInUp">
+                            <h2 class="text-center mt-5 mb-0 text-danger">Soft skills !!!!!!!!!!!!!!!!!</h2>
+                            <h2 class="text-center mt-5 mb-0 text-danger">Currently working on:</h2>
+                            <p class="text-center">Improving my skills in, and understanding of vanilla JavaScript and React. Also, having fun with #100DaysOfCode building & animating things via CSS.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Skills end -->
+
+            <!-- Resume -->
+            <section id="resume" class="section bg-light">
+                <div class="container">
+                    <p class=" text-center mb-2" data-aos="fade-up"><span class="bg-primary text-dark px-2">Resume</span></p>
+                    <h2 class="text-10 fw-600 text-center mb-5" data-aos="fade-up">A summary of my resume</h2>
+
+                    <div class="row g-5 mt-5">
+                        <div class="col-lg-6" data-aos="fade-up">
+                            <h2 class="text-7 fw-600 mb-4 pb-2"><i class="fa-solid fa-graduation-cap me-2"></i> My Education</h2>
+                            <div class="border-start border-2 border-primary ps-3">
+                                <h3 class="text-5">Masters in Computer Engineering</h3>
+                                <p class="mb-2">Slovak University of Technology, Bratislava <span class="text-secondary">(2017 - 2019)</span></p>
+                                <p class="text-muted">
+                                    Faculty of Electrical Engineering and Information Technology.<br>
+                                    Study program in the field of robotics and cybernetics.
+                                </p>
+                                <hr class="my-4">
+                                <h3 class="text-5">Bachelor in Computer Engineering</h3>
+                                <p class="mb-2">Slovak University of Technology, Bratislava <span class="text-secondary">(2013 - 2017)</span></p>
+                                <p class="text-muted">
+                                    Faculty of Electrical Engineering and Information Technology.<br>
+                                    Study program in the field of applied informatics.
+                                </p>
+                                <hr class="my-4">
+                                <h3 class="text-5">High school</h3>
+                                <p class="mb-2">Gymnasium Golianova, Nitra <span class="text-secondary">(2009 - 2013)</span></p>
+                                <p class="text-muted">
+                                    Computer science and programming class
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                            <h2 class="text-7 fw-600 mb-4 pb-2"><i class="fa-solid fa-briefcase me-2"></i> My Experience</h2>
+                            <div class="border-start border-2 border-primary ps-3">
+                                <h3 class="text-5">PHP fullstack developer</h3>
+                                <p class="mb-2">Webtec s.r.o. <span class="text-secondary">(2019 - present)</span></p>
+                                <p class="text-muted">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, temporibus. <br>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </p>
+                                <hr class="my-4">
+                                <h3 class="text-5">Junior web developer</h3>
+                                <p class="mb-2">Webtec s.r.o. <span class="text-secondary">(2017 - 2019)</span></p>
+                                <p class="text-muted">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, nesciunt. <br>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit Hic quaerat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center mt-5" data-aos="fade-up"><a href="#" class="btn btn-outline-dark shadow-none rounded-0">Download CV</a></p>
+                </div>
+            </section>
+            <!-- Resume end -->
+
+            <!-- Call to Action -->
+            <section>
+              <div class="hero-wrap">
+                <div class="hero-mask opacity-8 bg-dark"></div>
+                <div class="hero-bg parallax" style="background-image:url('images/intro-bg-2.jpg');"></div>
+                <div class="hero-content section">
+                  <div class="container text-center py-5" data-aos="fade-up">
+                    <h2 class="text-10 fw-600 text-white mb-5">Did I interest you?</h2>
+                    <a href="#contact" class="btn btn-primary rounded-0 smooth-scroll">Contact Me!</a> </div>
+                </div>
+              </div>
+            </section>
+            <!-- Call to Action end -->
+
+            <!-- Portfolio -->
+            <section id="portfolio" class="section">
+                <div class="container">
+                    <p class=" text-center mb-2" data-aos="fade-up"><span class="bg-primary text-dark px-2">Portfolio</span></p>
+                    <h2 class="text-10 fw-600 text-center mb-5" data-aos="fade-up">Some of my most recent projects</h2>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portfolio">
+                                <div class="portfolio__img-wrapper" data-aos="fade-up">
+                                    <img class="portfolio__img img-fluid d-block" src="images/projects/kancelarie.png" alt="">
+                                    <div class="portfolio__overlay">
+                                        <h3 class="portfolio__overlay-title mb-3">Kancelarie.sk</h3>
+                                        <a href="https://kancelarie.sk" target="_blank" class="btn btn-sm btn-light">Visit website</a>
+                                    </div>
+                                </div>
+                                <div class="portfolio__body" data-aos="fade-up" data-aos-delay="200">
+                                    <h3 class="portfolio__title">
+                                        <a href="https://kancelarie.sk" target="_blank" class="portfolio__link">Kancelarie.sk</a>
+                                    </h3>
+                                    <p class="portfolio__text text-secondary">
+                                        Kancelarie.sk is a central database of free office and warehouse spaces with
+                                        hundreds of visitor a day. I worked on various parts of the system including
+                                        frontend UI, filtering algorithm, backend (admin) functionalities, Google Maps
+                                        API and OpenStreetMap API.
+                                    </p>
+                                    <div class="portfolio__technologies">
+                                        <img src="images/icons/technologies/html-grey.png" alt="HTML" data-bs-toggle="tooltip" title="" data-bs-original-title="HTML">
+                                        <img src="images/icons/technologies/css-grey.png" alt="CSS" data-bs-toggle="tooltip" title="" data-bs-original-title="CSS">
+                                        <img src="images/icons/technologies/bootstrap-grey.png" alt="Bootstrap" data-bs-toggle="tooltip" title="" data-bs-original-title="Bootstrap">
+                                        <img src="images/icons/technologies/jquery-grey.png" alt="jQuery" data-bs-toggle="tooltip" title="" data-bs-original-title="jQuery">
+                                        <img src="images/icons/technologies/php-grey.png" alt="PHP" data-bs-toggle="tooltip" title="" data-bs-original-title="PHP">
+                                        <img src="images/icons/technologies/nette-grey.png" alt="Nette" data-bs-toggle="tooltip" title="" data-bs-original-title="Nette">
+                                        <img src="images/icons/technologies/postgresql-grey.png" alt="PostgreSQL" data-bs-toggle="tooltip" title="" data-bs-original-title="PostgreSQL">
+                                    </div>
+                                    <a href="https://kancelarie.sk" class="btn btn-sm btn-primary me-2" target="_blank">Visit website <i class="fa-solid fa-up-right-from-square ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portfolio portfolio--flip">
+                                <div class="portfolio__img-wrapper" data-aos="fade-up">
+                                    <img class="portfolio__img img-fluid d-block" src="images/projects/najlekaren.png" alt="">
+                                    <div class="portfolio__overlay">
+                                        <h3 class="portfolio__overlay-title mb-3">Najlekaren.sk</h3>
+                                        <a href="" class="btn btn-sm btn-light">Visit website</a>
+                                    </div>
+                                </div>
+                                <div class="portfolio__body" data-aos="fade-up" data-aos-delay="200">
+                                    <h3 class="portfolio__title">
+                                        <a href="" class="portfolio__link">Najlekaren.sk</a>
+                                    </h3>
+                                    <p class="portfolio__text text-secondary">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur
+                                        distinctio libero nisi odit omnis praesentium quo ratione vel velit?
+                                    </p>
+                                    <div class="portfolio__technologies">
+                                        <img src="images/icons/technologies/html-grey.png" alt="HTML" data-bs-toggle="tooltip" title="" data-bs-original-title="HTML">
+                                        <img src="images/icons/technologies/css-grey.png" alt="CSS" data-bs-toggle="tooltip" title="" data-bs-original-title="CSS">
+                                        <img src="images/icons/technologies/php-grey.png" alt="PHP" data-bs-toggle="tooltip" title="" data-bs-original-title="PHP">
+                                        <img src="images/icons/technologies/nette-grey.png" alt="Nette" data-bs-toggle="tooltip" title="" data-bs-original-title="Nette">
+                                        <img src="images/icons/technologies/postgresql-grey.png" alt="PostgreSQL" data-bs-toggle="tooltip" title="" data-bs-original-title="PostgreSQL">
+                                    </div>
+                                    <a href="" class="btn btn-sm btn-primary me-2" target="_blank">Visit website <i class="fa-solid fa-up-right-from-square ms-1"></i></a>
+                                    <a href="" class="btn btn-sm btn-secondary" target="_blank">View Github repo <i class="fa-brands fa-github ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portfolio">
+                                <div class="portfolio__img-wrapper" data-aos="fade-up">
+                                    <img class="portfolio__img img-fluid d-block" src="images/projects/pagace.png" alt="">
+                                    <div class="portfolio__overlay">
+                                        <h3 class="portfolio__overlay-title mb-3">Pagace.sk</h3>
+                                        <a href="" class="btn btn-sm btn-light">Visit website</a>
+                                    </div>
+                                </div>
+                                <div class="portfolio__body" data-aos="fade-up" data-aos-delay="200">
+                                    <h3 class="portfolio__title">
+                                        <a href="" class="portfolio__link">Pagace.sk</a>
+                                    </h3>
+                                    <p class="portfolio__text text-secondary">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur
+                                        distinctio libero nisi odit omnis praesentium quo ratione vel velit?
+                                    </p>
+                                    <div class="portfolio__technologies">
+                                        <img src="images/icons/technologies/html-grey.png" alt="HTML" data-bs-toggle="tooltip" title="" data-bs-original-title="HTML">
+                                        <img src="images/icons/technologies/css-grey.png" alt="CSS" data-bs-toggle="tooltip" title="" data-bs-original-title="CSS">
+                                        <img src="images/icons/technologies/php-grey.png" alt="PHP" data-bs-toggle="tooltip" title="" data-bs-original-title="PHP">
+                                        <img src="images/icons/technologies/nette-grey.png" alt="Nette" data-bs-toggle="tooltip" title="" data-bs-original-title="Nette">
+                                        <img src="images/icons/technologies/postgresql-grey.png" alt="PostgreSQL" data-bs-toggle="tooltip" title="" data-bs-original-title="PostgreSQL">
+                                    </div>
+                                    <a href="" class="btn btn-sm btn-primary me-2" target="_blank">Visit website <i class="fa-solid fa-up-right-from-square ms-1"></i></a>
+                                    <a href="" class="btn btn-sm btn-secondary" target="_blank">View Github repo <i class="fa-brands fa-github ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portfolio portfolio--flip">
+                                <div class="portfolio__img-wrapper" data-aos="fade-up">
+                                    <img class="portfolio__img img-fluid d-block" src="images/projects/bizland.png" alt="">
+                                    <div class="portfolio__overlay">
+                                        <h3 class="portfolio__overlay-title mb-3">Bizland.sk</h3>
+                                        <a href="" class="btn btn-sm btn-light">Visit website</a>
+                                    </div>
+                                </div>
+                                <div class="portfolio__body" data-aos="fade-up" data-aos-delay="200">
+                                    <h3 class="portfolio__title">
+                                        <a href="" class="portfolio__link">Bizland.sk</a>
+                                    </h3>
+                                    <p class="portfolio__text text-secondary">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur
+                                        distinctio libero nisi odit omnis praesentium quo ratione vel velit?
+                                    </p>
+                                    <div class="portfolio__technologies">
+                                        <img src="images/icons/technologies/html-grey.png" alt="HTML" data-bs-toggle="tooltip" title="" data-bs-original-title="HTML">
+                                        <img src="images/icons/technologies/css-grey.png" alt="CSS" data-bs-toggle="tooltip" title="" data-bs-original-title="CSS">
+                                        <img src="images/icons/technologies/php-grey.png" alt="PHP" data-bs-toggle="tooltip" title="" data-bs-original-title="PHP">
+                                        <img src="images/icons/technologies/nette-grey.png" alt="Nette" data-bs-toggle="tooltip" title="" data-bs-original-title="Nette">
+                                        <img src="images/icons/technologies/postgresql-grey.png" alt="PostgreSQL" data-bs-toggle="tooltip" title="" data-bs-original-title="PostgreSQL">
+                                    </div>
+                                    <a href="" class="btn btn-sm btn-primary me-2" target="_blank">Visit website <i class="fa-solid fa-up-right-from-square ms-1"></i></a>
+                                    <a href="" class="btn btn-sm btn-secondary" target="_blank">View Github repo <i class="fa-brands fa-github ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Portfolio end -->
+
+            <!-- Contact Me
+            ============================================= -->
+            <section id="contact" class="section bg-primary">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-5 text-center text-lg-start wow fadeInUp">
+                    <h2 class="text-10 fw-600 mb-5">Let's get in touch</h2>
+                    <p class="text-5 mb-5">I enjoy discussing new projects and design challenges. Please share as much info, as possible so we can get the most out of our first catch-up.</p>
+                    <h3 class="text-5 fw-600">Living In:</h3>
+                    <address class="text-4">
+                    30 Shacham street,
+                    Los Angeles, USA.
+                    </address>
+                    <h3 class="text-5 fw-600">Call:</h3>
+                    <p class="text-4">(+060) 444 434 444</p>
+                    <ul class="social-icons social-icons-lg justify-content-center justify-content-lg-start mt-5">
+                      <li class="social-icons-facebook"><a data-bs-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-bs-original-title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                      <li class="social-icons-instagram"><a data-bs-toggle="tooltip" href="http://www.instagram.com/" target="_blank" title="" data-bs-original-title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                      <li class="social-icons-github"><a data-bs-toggle="tooltip" href="http://www.github.com/" target="_blank" title="" data-bs-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+                      <li class="social-icons-linkedin"><a data-bs-toggle="tooltip" href="http://www.linkedin.com/" target="_blank" title="" data-bs-original-title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 ms-auto mt-5 mt-lg-0 wow fadeInUp" data-wow-delay="0.3s">
+                    <h2 class="text-10 fw-600 text-center text-lg-start mb-5">Estimate your Project?</h2>
+                    <!-- Contact Form -->
+                    <form id="contact-form" class="form-border" action="php/mail.php" method="post">
+                      <div class="row g-4">
+                        <div class="col-12">
+                          <label class="form-label" for="name">What is Your Name:</label>
+                          <input id="name" name="name" type="text" class="form-control py-1" required >
+                        </div>
+                        <div class="col-12">
+                          <label class="form-label" for="email">Your Email Address:</label>
+                          <input id="email" name="email" type="email" class="form-control py-1" required >
+                        </div>
+                        <div class="col-12">
+                          <label class="form-label" for="form-message">How can I Help you?:</label>
+                          <textarea id="form-message" name="form-message" class="form-control py-1" rows="4" required ></textarea>
+                        </div>
+                        <div class="col-12 text-center text-lg-start">
+                          <button id="submit-btn" class="btn btn-dark rounded-0" type="submit">Send <span class="ms-3"><i class="fas fa-arrow-right"></i></span></button>
+                        </div>
+                      </div>
+                    </form>
+                    <!-- Contact Form end -->
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Contact Me end -->
+
+          </div>
+          <!-- Content end -->
+
+          <!-- Footer
+          ============================================= -->
+          <footer id="footer" class="section bg-dark text-white">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 text-center text-lg-start wow fadeInUp">
+                  <p class="mb-2 mb-lg-0">Copyright © 2021 <a class="fw-600" href="#">Callum</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 wow fadeInUp">
+                  <p class="mb-0 text-center text-lg-end">Designed by <a class="fw-600" href="http://www.harnishdesign.net/">Harnish Design</a></p>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- Footer end -->
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- jQuery easing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jQuery appear -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js" integrity="sha512-h3cK8UUr5b3GLA8k7uBvK2c2U/JjnaG7i7KF5OSUE6JPF5B+JCg/LI/VOlIORYK9d0UAUhXDoVVbEDmBFOOLeQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Imagesloaded -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js" integrity="sha512-kfs3Dt9u9YcOiIt4rNcPUzdyNNO9sVGQPiZsub7ywg6lRW5KuK1m145ImrFHe3LMWXHndoKo2YRXWy8rnOcSKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Typed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Magnific popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Parallaxie -->
+    <script src="vendor/parallaxie/parallaxie.min.js"></script>
+    <!-- Custom Script -->
+    <script src="js/app.js"></script>
+</body>
+</html>
