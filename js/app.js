@@ -1,14 +1,18 @@
 (function ($) {
 	"use strict";
 
-	// Preloader
+	/*------------------------------------
+		Preloader
+	-------------------------------------- */
 	$(window).on('load', function () {
 		$('.lds-ellipsis').fadeOut();
 		$('.preloader').delay(333).fadeOut('slow');
 		$('body').delay(333);
 	});
 
-	// Header Sticky
+	/*------------------------------------
+		Header Sticky
+	-------------------------------------- */
 	$(window).on('scroll',function () {
 		let stickytopslide = $('#header.sticky-top-slide');
 		if ($(this).scrollTop() > 180) {
@@ -20,7 +24,9 @@
 		}
 	});
 
-	// Sections Scroll
+	/*------------------------------------
+		Sections Scroll
+	-------------------------------------- */
 	if ($("body").hasClass("side-header")) {
 		$('.smooth-scroll').on('click', function() {
 			event.preventDefault();
@@ -37,7 +43,9 @@
 		});
 	}
 
-	// Mobile Menu
+	/*------------------------------------
+		Mobile Menu
+	-------------------------------------- */
 	$('.navbar-toggler').on('click', function() {
 		$(this).toggleClass('show');
 	});
@@ -80,74 +88,6 @@
 	});
 
 	/*------------------------------------
-		Magnific Popup
-	-------------------------------------- */
-	// Image on Modal
-	$('.popup-img').each(function() {
-		$(this).magnificPopup({
-			//delegate: '.popup-img:visible',
-			type: "image",
-			tLoading: '<div class="preloader"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>',
-			closeOnContentClick: !0,
-			mainClass: "mfp-fade",
-			gallery: {
-				enabled: true,
-				navigateByImgClick: true,
-				preload: [0, 1]
-			},
-		});
-	});
-
-	// Ajax On Modal
-	$('.popup-ajax').each(function() {
-		$(this).magnificPopup({
-			//delegate: '.popup-ajax:visible',
-			type: "ajax",
-			tLoading: '<div class="preloader"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>',
-			mainClass: "mfp-fade",
-			closeBtnInside: true,
-			midClick: true,
-			gallery: {
-			  enabled: true,
-			},
-			callbacks: {
-				ajaxContentAdded: function() {
-					$(".owl-carousel").each(function (index) {
-						let a = $(this);
-					  	$(this).owlCarousel({
-							autoplay: a.data('autoplay'),
-							center: a.data('center'),
-							autoplayTimeout: a.data('autoplaytimeout'),
-							autoplayHoverPause: a.data('autoplayhoverpause'),
-							loop: a.data('loop'),
-							speed: a.data('speed'),
-							nav: a.data('nav'),
-							dots: a.data('dots'),
-							autoHeight: a.data('autoheight'),
-							autoWidth: a.data('autowidth'),
-							margin: a.data('margin'),
-							stagePadding: a.data('stagepadding'),
-							slideBy: a.data('slideby'),
-							lazyLoad: a.data('lazyload'),
-							navText:['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-							animateOut: a.data('animateOut'),
-							animateIn: a.data('animateIn'),
-							video: a.data('video'),
-							items: a.data('items'),
-							responsive:{
-								0:{items: a.data('items-xs'),},
-								576:{items: a.data('items-sm'),},
-								768:{items: a.data('items-md'),},
-								992:{items: a.data('items-lg'),}
-							}
-						});
-					});
-				}
-			}
-		});
-	});
-
-	/*------------------------------------
 		Parallax Background
 	-------------------------------------- */
 	$(".parallax").each(function () {
@@ -176,7 +116,7 @@
 		AOS.init({
 			disable: 'mobile',
 			duration: 800,
-			// once: true,
+			once: true,
 		});
 	});
 
@@ -204,6 +144,18 @@
 		$('html, body').animate({scrollTop:0}, 'slow');
 		return false;
 	});
+
+	/*------------------------------------
+		Portfolio load more
+	-------------------------------------- */
+	$(".js-portfolio-item").slice(0, 4).show();
+	$(".js-load-more").on('click', function (e) {
+        e.preventDefault();
+        $(".js-portfolio-item:hidden").slice(0, 2).slideDown();
+        if ($(".js-portfolio-item:hidden").length == 0) {
+            $(".js-load-more").fadeOut('slow');
+        }
+    });
 
 	/*------------------------
 	   Contact Form
