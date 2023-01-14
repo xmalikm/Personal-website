@@ -101,7 +101,7 @@
 	-------------------------------------- */
 	$(".typed").each(function() {
 		let typed = new Typed('.typed', {
-			strings: ['^300 Backend', '^500 Frontend', '^500 Fullstack'],
+			strings: ['^300 Fullstack', '^500 Backend', '^500 Frontend'],
 			loop: true,
 			typeSpeed: 100,
 			backSpeed: 80,
