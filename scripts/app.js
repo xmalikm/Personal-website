@@ -14,12 +14,12 @@
 		Header Sticky
 	-------------------------------------- */
 	$(window).on('scroll',function () {
-		let stickytopslide = $('#header.sticky-top-slide');
+		let stickyTopSlide = $('#header.sticky-top-slide');
 		if ($(this).scrollTop() > 180) {
-			stickytopslide.find(".primary-menu").addClass("sticky-on");
+			stickyTopSlide.find(".primary-menu").addClass("sticky-on");
 			$('body').css('margin-top', '71px');
 		} else {
-			stickytopslide.find(".primary-menu").removeClass("sticky-on");
+			stickyTopSlide.find(".primary-menu").removeClass("sticky-on");
 			$('body').css('margin-top', '0');
 		}
 	});
