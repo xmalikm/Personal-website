@@ -688,7 +688,7 @@
                         <div class="col-lg-6 ms-auto mt-5 mt-lg-0 wow fadeInUp" data-wow-delay="0.3s">
                             <h2 class="text-10 fw-600 text-center text-lg-start mb-5">Have any questions?</h2>
                             <!-- Contact Form -->
-                            <form id="contact-form" class="form-border" action="php/mail.php" method="post">
+                            <form id="contact-form" class="form-border" action="php/send_mail.php" method="post">
                                 <div class="row g-4">
                                     <div class="col-12">
                                         <label class="form-label" for="name">Your name:</label>
@@ -702,6 +702,7 @@
                                         <label class="form-label" for="message">Message:</label>
                                         <textarea id="message" name="message" class="form-control py-1" rows="4" required ></textarea>
                                     </div>
+                                    <input type="hidden" name="recaptcha_token" id="recaptchaToken">
                                     <div class="col-12 text-center text-lg-start">
                                         <button id="submit-btn" class="btn btn-dark rounded-0" type="submit">Send <span class="ms-3"><i class="fas fa-arrow-right"></i></span></button>
                                     </div>
@@ -721,7 +722,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 text-center text-lg-start wow fadeInUp">
-                        <p class="mb-2 mb-lg-0">Copyright © 2022 | All Rights Reserved</p>
+                        <p class="mb-2 mb-lg-0">Copyright © <?= date('Y') ?> | All Rights Reserved</p>
                     </div>
                     <div class="col-lg-6 wow fadeInUp">
                         <p class="mb-0 text-center text-lg-end">Developed by <span class="text-primary fw-600">Martin Malík</span></p>
@@ -740,6 +741,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js" integrity="sha512-kfs3Dt9u9YcOiIt4rNcPUzdyNNO9sVGQPiZsub7ywg6lRW5KuK1m145ImrFHe3LMWXHndoKo2YRXWy8rnOcSKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcXCSorAAAAAFgPHD1rP8Q9N4XUVB7kUHq4BTdL"></script>
     <script src="styles/vendor/parallaxie/parallaxie.min.js"></script>
     <script src="scripts/app.js"></script>
 </body>

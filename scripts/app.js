@@ -160,40 +160,48 @@
 	/*------------------------
 	   Contact Form
 	-------------------------- */
-	let form = $('#contact-form'); // contact form
-	let submit = $('#submit-btn'); // submit button
-	form.on('submit', function (e) {
+	let contactForm = $('#contact-form'); // contact form
+	let submitBtn = $('#submit-btn'); // submit button
+
+	contactForm.on('submit', function (e) {
 		e.preventDefault();
-		$.ajax({
-			url: 'php/mail.php',
-			type: 'POST',
-			dataType: 'json',
-			data: form.serialize(),
-			beforeSend: function () {
-				submit.attr("disabled", "disabled");
-				let loadingText = '<span role="status" aria-hidden="true" class="spinner-border spinner-border-sm align-self-center me-2"></span>Sending.....';
-				if (submit.html() !== loadingText) {
-					submit.data('original-text', submit.html());
-					submit.html(loadingText);
-				}
-			},
-			success: function (data) {
-				submit.before(data.Message).fadeIn("slow");
-				submit.html(submit.data('original-text'));
-				submit.removeAttr("disabled", "disabled");
-				if (data.response == 'success') {
-					form.trigger('reset'); // reset form
-				}
-				setTimeout(function () {
-					$('.alert-dismissible').fadeOut('slow', function(){
-						$(this).remove();
-					});
-				}, 3500);
-			},
-			error: function (e) {
-				console.log(e.responseText)
-			}
+
+		grecaptcha.ready(function() {
+			grecaptcha.execute('6LcXCSorAAAAAFgPHD1rP8Q9N4XUVB7kUHq4BTdL', {action: 'contact_form'}).then(function(token) {
+				$('#recaptchaToken').val(token);
+				$.ajax({
+					url: 'php/send_mail.php',
+					type: 'POST',
+					dataType: 'json',
+					data: contactForm.serialize(),
+					beforeSend: function () {
+						submitBtn.attr("disabled", "disabled");
+						let loadingText = '<span role="status" aria-hidden="true" class="spinner-border spinner-border-sm align-self-center me-2"></span>Sending.....';
+						if (submitBtn.html() !== loadingText) {
+							submitBtn.data('original-text', submitBtn.html());
+							submitBtn.html(loadingText);
+						}
+					},
+					success: function (data) {
+						submitBtn.before(data.message).fadeIn("slow");
+						submitBtn.html(submitBtn.data('original-text'));
+						submitBtn.removeAttr("disabled", "disabled");
+						if (data.response === 'success') {
+							contactForm.trigger('reset'); // reset form
+						}
+						setTimeout(function () {
+							$('.alert-dismissible').fadeOut('slow', function(){
+								$(this).remove();
+							});
+						}, 3500);
+					},
+					error: function (e) {
+						console.log(e.responseText)
+					}
+				});
+			});
 		});
+
 	});
 
 })(jQuery)
